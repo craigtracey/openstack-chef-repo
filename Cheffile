@@ -23,14 +23,16 @@ cookbook 'omnibus_updater', '0.1.0'
 cookbook 'lxc', '0.1.0'
 
 # Updates for my forked repos
+cookbook 'keystone',
+  :git => 'git@github.com:craigtracey/keystone.git',
+  :ref => 'grizzly-2013.1.1'
+
 cookbook 'glance',
-  :git => 'git@github.com:craigtracey/glance.git'
+  :git => 'git@github.com:craigtracey/glance.git',
+  :ref => 'grizzly-2013.1.1'
 
 cookbook 'nova',
   :git => 'git@github.com:craigtracey/nova.git'
-
-cookbook 'keystone',
-  :git => 'git@github.com:craigtracey/keystone.git'
 
 cookbook 'horizon',
   :git => 'git@github.com:craigtracey/horizon.git'
